@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Home</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="navbar-brand">
+								<h1><a href="index.html"><img src="images/logo.png" width="200px" height="125px"></a>
+								</h1>
+							</div>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li><a href="aboutus.html">About</a></li>
+								<li><a href="upload.html">Careers</a></li>
+								<li class="dropdown">
+								<li><a href="orderonline.php">Order online</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
+								<li><a href="create.php">Register</a></li>
+							</ul>
+
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+
+			</div>
+			<div class="slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li>
+							<h3>great choice of <span>bakery</span> </h3>
+						</li>
+						<li>
+							<h3>best rate's <span>bread</span> </h3>
+						</li>
+						<li>
+							<h3>The most delicious <span>bread</span> </h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--header-->
+	<!--Welcome-->
+	<div class="content">
+		<div class="Welcome-section">
+			<div class="container">
+				<h2>Welcome to Luca's Loaves</h2>
+				<div class="Welcome-grids">
+					<div class="col-md-4 welcome-grid">
+						<div class="welcome-grid1">
+							<img src="images/w1.jpg" class="img-responsive" alt="" />
+						</div>
+						<h4>Recipes</h4>
+						<p>Be inspired with our delicious recipes. They are sure to be an easy hit amongst family and
+							friends.</p>
+					</div>
+					<div class="col-md-4 welcome-grid">
+						<div class="welcome-grid1">
+							<img src="images/w2.jpeg" class="img-responsive" alt="" />
+						</div>
+						<h4>About Luca's Loaves</h4>
+						<p>Since our first store , our bakers have been committed to ensuring every loaf, every roll and
+							every bun is a delight to bake, a delight to eat and delivered through a delightful customer
+							experience.</p>
+					</div>
+					<div class="col-md-4 welcome-grid">
+						<div class="welcome-grid1">
+							<img src="images/w3.jpeg" class="img-responsive" alt="" />
+						</div>
+						<h4>SourDough Making classes</h4>
+						<p>Our experienced bakery expert will show you how to make best Sourdough bread. Join us on
+							First Saturday of every month. 9 am to 5 pm with lunch provided. Learn to make your own
+							bread $350 plus GST.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!--Welcome-->
+
+		<div class="slider1">
+			<div class="arrival-grids">
+				<ul id="flexiselDemo1">
+					<li>
+						<a href="rooms.html"><img src="images/s1.jpeg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="rooms.html"><img src="images/s2.jpeg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="rooms.html"><img src="images/s3.jpeg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="rooms.html"><img src="images/s4.jpeg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="rooms.html"><img src="images/s5.jpeg" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="rooms.html"><img src="images/s6.jpeg" alt="" />
+						</a>
+					</li>
+				</ul>
+				<script type="text/javascript">
+					$(window).load(function () {
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: {
+								portrait: {
+									changePoint: 480,
+									visibleItems: 1
+								},
+								landscape: {
+									changePoint: 640,
+									visibleItems: 2
+								},
+								tablet: {
+									changePoint: 768,
+									visibleItems: 3
+								}
+							}
+						});
+					});
+				</script>
+				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			</div>
+		</div>
+		<!--GET IN TOUCH-->
+		<div class="touch-section">
+			<div class="container">
+				<h3>get in touch</h3>
+				<div class="touch-grids">
+					<div class="col-md-4 touch-grid">
+						<h4>address</h4>
+						<h5>36 Garden Ave, Mullumbimby NSW 2482</h5>
+						<p>36 Garden Ave, </p>
+						<p>Mullumbimby NSW 2482</p>
+						<p>United Kingdom</p>
+					</div>
+					<div class="col-md-4 touch-grid">
+						<h4>Sales</h4>
+						<h5>Sales Enquiries</h5>
+						<p>Telephone : +1 800 603 6035</p>
+						<p>Fax : +1 800 889 9898</p>
+						<p>E-mail : <a href="mailto:example@mail.com">info@lucasloaves.com.au </a></p>
+					</div>
+					<div class="col-md-4 touch-grid">
+						<h4>general</h4>
+						<h5>36 Garden Ave, Mullumbimby NSW 2482</h5>
+						<p>Telephone : +1 800 603 6035</p>
+						<p>Fax : +1 800 889 9898</p>
+						<p>E-mail : <a href="mailto:example@mail.com">info@lucasloaves.com.au </a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!--GET IN TOUCH-->
+	</div>
+	<!--footer-->
+	<div class="footer-section">
+		<div class="container">
+			<div class="footer-top">
+				<p>Copyright &copy; 20IT2 Gerry(Shen Binjie).<a target="_blank"></a></p>
+
+			</div>
+		</div>
+</body>
+
+
+</html>
